@@ -14,9 +14,9 @@ loop do
       if message = "KILL_SERVICE\n"
         socket.close
 
-      elsif message = "HELO text\n"
-        socket.print("HELO text\nIP:127.0.0.1\nPort:#{port}\nStudentID:12308907")
-
+      elsif message = "HELO BASE_TEST\n"
+        socket.print("HELO text\nIP:134.226.56.4\nPort:#{port}\nStudentID:12308907")
+        puts "Hello message received! \n"
       end
 
     end
